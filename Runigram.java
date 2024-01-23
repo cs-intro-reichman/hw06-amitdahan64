@@ -88,8 +88,10 @@ public class Runigram {
 		Color[][] newImage = new Color[image.length][image[0].length];
 
 		for(int i =0; i< newImage.length; i++){
+			
 			for(int j =0; j< newImage[0].length;j++){
-				newImage[i][j] = image[0][image[0].length -1-j];
+				newImage[i][j] = image[i][image[0].length -1-j];
+				
 			}
 			
 		}
